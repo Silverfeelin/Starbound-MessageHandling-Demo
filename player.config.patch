@@ -1,0 +1,7 @@
+[
+  {
+    "op": "add",
+    "path": "/deploymentConfig/scripts/-",
+    "value": "/scripts/mhDemo/mhDeployment.lua"
+  }
+]

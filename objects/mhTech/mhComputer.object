@@ -1,0 +1,64 @@
+{
+  "objectName" : "mhComputer",
+  "colonyTags" : ["industrial","electronic","wired"],
+  "rarity" : "Common",
+  "description" : "If only I could fit this in my pocket.",
+  "shortdescription" : "Message Handling Calculator",
+  "race" : "generic",
+  "category" : "wire",
+  "price" : 0,
+
+  "lightColor" : [38, 110, 70],
+  "flickerPeriod" : 0.3,
+  "flickerMinIntensity" : 0.95,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.1,
+  "flickerIntensityVariance" : 0.0,
+
+  "inventoryIcon" : "mhComputericon.png",
+  "orientations" : [
+    {
+      "image" : "mhComputer.png:<color>.<frame>",
+      "imagePosition" : [-16, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "collisionSpaces" : [ [-1,3], [0,3] ]
+    },
+    {
+      "image" : "mhComputer.png:<color>.<frame>",
+      "imagePosition" : [-16, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "collisionSpaces" : [ [-1,3], [0,3] ]
+    }
+  ],
+
+  "animation" : "mhComputer.animation",
+  "animationParts" : {
+    "bg" : "mhComputer.png",
+    "fg" : "mhComputerlit.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/apexconsole2switch.ogg" ],
+      "off" : [ "/sfx/objects/apexconsole2switch.ogg" ]
+    }
+  },
+  "animationPosition" : [-16, 0],
+
+  "soundEffect" : "/sfx/objects/bunkerconsole.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+
+  "scripts" : [
+    "mhComputer.lua"
+  ],
+
+  "scriptDelta" : 5
+}
