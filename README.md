@@ -65,7 +65,7 @@ The computer knows of a secret code, only accessible to local entities. Good luc
 
 When sending the message `mhComputer_secret` from our tech, deployment or active item script, the response will always be `nil`.
 
-We might have placed the object, but the object is not controlled/managed by the player. Even in single player, it will not work from a player script.
+We might have placed the object, but the object is not controlled/managed by the player. Even in single player, it will not work from a player script. Objects will be able to communicate with each other though, since they're all controlled by the server.
 
 [Back to top](#)
 
@@ -81,7 +81,7 @@ To use this script, you must equip the `dash` tech.
 
 Just like the deployment script, the tech script has a local message handler (`mhTech_loaded`) that'll simply respond with true.
 
-Although this feature may seem useless due to the presence of `player.equippedTech`, it can still be used to determine if this specific module is loaded (and it's just an example, geez..).
+Although this feature may seem useless due to the presence of `player.equippedTech`, it can still be used to determine if this specific module is loaded.
 
 ### <a name="tech-sending"></a> Sending Messages
 
